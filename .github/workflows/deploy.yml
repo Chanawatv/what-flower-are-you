@@ -25,10 +25,17 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Configure Git
+      - name: Set Git config
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy
-        run: npm run deploy
+        run: |
+          git fetch origin gh-pages --depth=1
+          git worktree add ..//gh-pages gh-pages --no-checkout
+          cp -rT build/ ../gh-pages
+          cd ../gh-pages
+          git add --all .
+          git commit -m "Deploy"
+          git push origin gh-pages
