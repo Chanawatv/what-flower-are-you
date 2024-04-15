@@ -1,0 +1,25 @@
+:root {
+    --text-primary: darkslategray;
+    --text-primary-background: white;
+    --text-secondary: white;
+    --text-secondary-background: rgb(18, 31, 31);
+    --text-box-shadow: darkslategray;
+    --background-primary: aquamarine;
+    --background-secondary: darkcyan;
+    --text-red: tomato;
+    --text-blue: cornflowerblue;
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --text-primary: white;
+        --text-primary-background: rgb(24, 40, 40);
+        --text-secondary: rgb(24, 40, 40);
+        --text-secondary-background: white;
+        --text-box-shadow: rgb(188, 219, 213);
+        --background-primary: rgb(69, 117, 117);
+        --background-secondary: darkslategray;
+        --text-red: tomato;
+        --text-blue: cornflowerblue;
+    }
+}
