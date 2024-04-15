@@ -27,7 +27,7 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: '/${{ github.event.repository.name }}/tree/gh-pages/'
+          BASE_PATH: '/${{ github.event.repository.name }}/tree/gh-pages'
         run: npm run build
 
       - name: Set Git config
