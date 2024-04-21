@@ -1,0 +1,34 @@
+[
+    {
+        "question": "How do you typically approach new challenges or situations?",
+        "choices": {
+            "a": "Head-on, with determination and focus",
+            "b": "Carefully, weighing all options before acting",
+            "c": "With a flexible mindset, adapting as needed"
+        }
+    },
+    {
+        "question": "How do you handle stress or difficult situations?",
+        "choices": {
+            "a": "Seeking support from others",
+            "b": "Taking time for self-reflection and relaxation",
+            "c": "Confronting the issue head-on and finding solutions"
+        }
+    },
+    {
+        "question": "What motivates you to pursue your goals?",
+        "choices": {
+            "a": "Personal fulfillment and growth",
+            "b": "Recognition and praise from others",
+            "c": "Overcoming challenges and obstacles"
+        }
+    },
+    {
+        "question": "How do you define success, and what does it look like to you?",
+        "choices": {
+            "a": "Achieving personal goals and happiness",
+            "b": "Attaining wealth and status",
+            "c": "Making a positive impact on others and the world"
+        }
+    }
+]
