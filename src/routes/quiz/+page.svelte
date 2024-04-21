@@ -33,7 +33,7 @@
         </div>
     {:else}
         <h1 class="result">You are a "{resultDisplay}"!</h1>
-        <img class="image" width=300 src="/image/{result}.svg" alt={result} />
+        <img class="image" width=300 src="{base}/image/{result}.svg" alt={result} />
         <p class="meaning">Meaning: {meaning}</p>
         <button class="back" on:click={backToHome}>&lt;&lt; Back to Home</button>
     {/if}
@@ -81,7 +81,7 @@
         font-size: 2.4em;
         font-weight: bold;
         color: var(--text-primary);
-        padding: 10px 30px 15px 30px;
+        padding: 10px 25px 15px 25px;
         margin: 0;
         background-color: var(--text-primary-background);
         box-shadow: var(--text-box-shadow) 8px -4px;
@@ -99,7 +99,7 @@
         color: var(--text-primary);
         width: 100%;
         margin: 0;
-        padding: 5px 0 10px 0;
+        padding: 6px 0 12px 0;
         border-radius: 10px;
         background-color: var(--text-primary-background);
         box-shadow: var(--text-box-shadow) 4px -2px;
@@ -107,7 +107,7 @@
     .back{
         font-size: 1.2em;
         font-family: cursive, monospace;
-        padding: 0 10px 5px 10px;
+        padding: 2px 10px 6px 10px;
         margin-top: 0.4em;
         margin-left: auto;
         background-color: var(--text-box-shadow);
